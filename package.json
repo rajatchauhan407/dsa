@@ -1,0 +1,37 @@
+{
+  "name": "eco-backend-services",
+  "version": "1.0.0",
+  "description": "ECO addresses the challenge faced by high school students and career advisors in making informed decisions about future careers. It simplifies career planning by providing personalised insights for students and efficient tools for career advisors.",
+  "main": "test.js",
+  "scripts": {
+    "start": "nodemon dist/test.js",
+    "dev": "concurrently \"nodemon dist/test.js\" \"npm run build\"",
+    "build": "tsc -w",
+    "build:prod": "tsc && cp package.json dist/ && cp ecosystem.config.cjs dist/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Arentto",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "jest": "^29.7.0",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.5.1",
+    "socket.io": "^4.7.5",
+    "ts-jest": "^29.2.3",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.12",
+    "babel-plugin-module-resolver": "^5.0.2",
+    "nodemon": "^3.1.4",
+    "typescript": "^5.5.4"
+  },
+  "type": "module"
+}

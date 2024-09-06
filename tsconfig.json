@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "target": "es6",
+    "module": "es6",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "outDir": "dist",
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "paths": {
+      "*": ["node_modules/*"]
+    },
+    "sourceMap": true
+  },
+  "ts-node": {
+    "esm": true // Enable ES Module support in ts-node
+  },
+  "include": ["*.ts"]
+}
